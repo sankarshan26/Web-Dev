@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Diplomata+SC&display=swap" rel="stylesheet">
+    <title>
+        Photo Gallery
+    </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        header div {
+            padding-top: 5px;
+            background: rgb(249, 250, 252);
+            background: linear-gradient(240deg, rgba(249, 250, 252, 1) 19%, rgba(213, 125, 235, 1) 55%, rgba(166, 0, 255, 1) 100%);
+            flex-direction: column;
+            height: 80px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 55px;
+            margin-top: 17px;
+            margin-bottom: 17px;
+            border-radius: 55%;
+            font-kerning: normal;
+
+
+            /*creating boder gradient*/
+
+        }
+
+        .p {
+            font-weight: bolder;
+            font-family: 'Diplomata SC', cursive;
+            color: #327837;
+            margin-top: 14px;
+            margin-bottom: 17px;
+            padding-top: 19px;
+            padding-bottom: 10px;
+            /* background: rgb(218, 180, 237); */
+            flex-direction: row;
+            height: 83px;
+            padding-left: 23px;
+            padding-right: 20px;
+            font-size: 161%;
+            border-radius: 58%;
+            border: 5px solid red;
+            background: #FFE67C;
+            font-kerning: normal;
+        }
+
+        .space {
+            background: rgb(255, 255, 255);
+            font-kerning: normal;
+        }
+
+        .container {
+            /* converting container to flex box  */
+            padding-left: 15px;
+            padding-right: 15px;
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 200px;
+            max-height: 600px;
+        }
+
+        img {
+            /* setting the width of images  */
+            width: 100%;
+            height: 80%;
+            border-radius: 10%;
+            border: 1px solid black;
+            padding: 8px;
+            flex-shrink: 10%;
+            transition: 1s ease;
+
+        }
+
+        img:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(0.5);
+            transition: 1s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="p">P</div>
+        <div>h</div>
+        <div>o</div>
+        <div>t</div>
+        <div>o</div>
+        <div class="space">&nbsp; &nbsp; &nbsp;</div>
+        <div class="p">G</div>
+        <div>a</div>
+        <div>l</div>
+        <div>l</div>
+        <div>e</div>
+        <div>r</div>
+        <div>y</div>
+    </header>
+    <div class="container">
+        <div class="column">
+            <img src="https://images.pexels.com/photos/1677116/pexels-photo-1677116.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="...">
+            <img src="https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="..">
+            <img src="https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="....">
+            <img src="https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="....">
+            <img src="https://images.pexels.com/photos/12715260/pexels-photo-12715260.jpeg?auto=compress&cs=tinysrgb&h=566.525&fit=crop&w=633.175&dpr=1"
+                alt="...">
+        </div>
+
+        <div class="column">
+            <img src="https://images.pexels.com/photos/110812/pexels-photo-110812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="...">
+            <img src="https://images.pexels.com/photos/34098/south-africa-hluhluwe-giraffes-pattern.jpg?auto=compress&cs=tinysrgb&w=600"
+                alt="...">
+            <img src="https://images.pexels.com/photos/37833/rainbow-lorikeet-parrots-australia-rainbow-37833.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="...">
+            <img src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="...">
+            <img src="https://images.pexels.com/photos/814898/pexels-photo-814898.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="...">
+        </div>
+        <div class="column">
+            <img src="https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="...">
+            <img src="https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="...">
+            <img src="https://images.pexels.com/photos/60023/baboons-monkey-mammal-freeze-60023.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="...">
+            <img src="https://images.pexels.com/photos/1431465/pexels-photo-1431465.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="...">
+            <img src="https://images.pexels.com/photos/3493730/pexels-photo-3493730.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="...">
+        </div>
+    </div>
+</body>
+
+</html>
